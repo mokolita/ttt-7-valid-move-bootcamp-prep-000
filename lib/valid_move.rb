@@ -1,9 +1,8 @@
 def valid_move?(board, index)
-  board[index] == (0..8)
-
-  if position_taken?
-    returns true 
+  if board[index] == (0..8) && position_taken?
   end 
+
+ 
 end
 
 
