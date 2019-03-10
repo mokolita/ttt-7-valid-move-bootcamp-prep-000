@@ -1,5 +1,5 @@
 def valid_move?(board, index)
-  inde.between?(0, 8)
+  index.between?(0, 8)
   
   position_taken?  
 
