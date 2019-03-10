@@ -1,11 +1,9 @@
-def valid_move?(board, index)
+def valid_move?(number_entered, board)
+  number_entered.between?(0, 8) && !(position_taken?(board, number_entered))
+end
 
-  
-  board[index] == (0..8) 
-    
-  
-
- 
+def position_taken?(board, index)
+ !(board[index] == " " || board[index] == "" || board[index] == nil)
 end
 
 
